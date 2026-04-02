@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dâng Lễ Đỉnh Thiêng - Memory Game</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <h1>DÂNG LỄ <span>ĐỈNH THIÊNG</span></h1>
+            <p class="tagline">Lễ lên – Trí mở</p>
+        </div>
+
+        <div class="brand-info">
+            <img src="https://via.placeholder.com/120x120/00A2B1/FFFFFF?text=TINH+TRI" 
+                 alt="Logo Tinh Trí" 
+                 class="tinh-tri-logo">
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="container">
+        <h2 class="game-title">🛕 CHƠI MEMORY - DÂNG LỄ ĐỈNH THIÊNG</h2>
+        <p class="subtitle">
+            Ghép đôi các thẻ vật phẩm & kiến thức về thời kỳ Vua Hùng
+        </p>
+
+        <!-- LEVEL -->
+        <div style="margin-bottom: 20px;">
+            <label>Chọn cấp độ: </label>
+            <select id="level">
+                <option value="easy">Dễ</option>
+                <option value="medium">Trung bình</option>
+                <option value="hard">Khó</option>
+            </select>
+        </div>
+
+        <!-- STATS -->
+        <div class="stats">
+            <p>Thời gian: <span id="timer">0</span>s</p>
+            <p>Lượt lật: <span id="moves">0</span></p>
+            <p>Đã ghép: <span id="pairs">0</span></p>
+        </div>
+
+        <!-- GAME BOARD -->
+        <div id="game-board" class="game-board"></div>
+
+        <!-- BUTTON -->
+        <div class="controls">
+            <button id="restart-btn">Chơi lại</button>
+            <button id="how-to-play">Hướng dẫn chơi</button>
+        </div>
+
+        <!-- WIN -->
+        <div id="win-message" class="win-message hidden">
+            <h2>🎉 Chúc mừng bạn!</h2>
+            <p>Thời gian: <span id="final-time"></span> giây</p>
+            <p>Số lượt: <span id="final-moves"></span></p>
+            <button id="play-again">Chơi lại</button>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            Thương hiệu <strong>Tinh Trí</strong> • 
+            Giáo dục lịch sử Vua Hùng cho trẻ em
+        </p>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
